@@ -123,6 +123,15 @@ footer p{ font-size: 12px; }
 .form-floating label{
   opacity: .6;
 }
+.form-floating input{ border-radius: 0; }
+.form-floating .submit{
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 16px;
+}
 
 @media all and (min-width: 640px){
 

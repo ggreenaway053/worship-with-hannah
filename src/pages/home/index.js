@@ -2,6 +2,9 @@ import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import {
+  FaArrowRight,
+} from "react-icons/fa";
 
 import { main, meta } from "../../content_option";
 import Card from "../../components/Card";
@@ -21,9 +24,11 @@ export const Home = () => {
             {main.title}
             {main.content}
 
-            <div className="form-floating form-group mt-5">
-              <input className="form-control" type="search" id="search" placeholder="Search for a song name or artist" />
-              <label className="ms-2" for="name">Search for a song name or artist</label>
+            <div className="form-floating form-group mt-5 position-relative">
+              <input className="form-control" type="text" id="search" name="search" placeholder="Search for a song name or artist" />
+              <label htmlFor="search">Search for a song name or artist</label>
+
+              <div className="submit"><FaArrowRight/></div>
             </div>
             
           </Col>
