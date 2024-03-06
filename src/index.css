@@ -97,6 +97,10 @@ a:not(.btn):hover{
 }
 
 /* home */
+blockquote{
+  white-space: pre;
+}
+.search_area{ top: 30px; }
 .reveal{ color: var(--secondary-color); }
 #search_results .item{
   padding: 1rem;
@@ -106,6 +110,26 @@ a:not(.btn):hover{
 }
 #search_results .item:hover{
   filter: brightness(90%);
+}
+
+.song_card > div{
+  background: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem;
+}
+.song_card .image{
+  width: 130px;
+}
+.song_card .image img{
+  width: 100%;
+  height: 100%;
+}
+.song_card .content{
+  padding-left: 3%;
+  width: calc( 100% - 130px );
+  flex-direction: column;
 }
 
 /* header */
@@ -132,7 +156,7 @@ footer p{ font-size: 12px; }
 .form-floating label{
   opacity: .6;
 }
-.form-floating input{ border-radius: 0; border: none; }
+.form-floating input{ border: none; }
 .form-floating .submit{
   font-size: 22px;
   position: absolute;

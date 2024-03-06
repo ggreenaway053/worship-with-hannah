@@ -9,16 +9,19 @@ const main = {
 };
 
 const favourites = {
-  title: <h2 className="mb-5">Our Hannah's favourites</h2>,
+  title: <h2 className="mb-0">Our Hannah's favourites</h2>,
   songs: [
     {
-      title: "Holy Water by Tasha Cobbs & We The Kingdom"
+      title: "Holy Water by Tasha Cobbs & We The Kingdom",
+      song_id: 5373494
     },
     {
-      title: "Worthy is the Lamb by Hillsong Worship"
+      title: "Worthy is the Lamb by Hillsong Worship",
+      song_id: 1976985
     },
     {
-      title: "Promises by Maverick City Music"
+      title: "Promises by Maverick City Music",
+      song_id: 5464454
     }
   ]
 }

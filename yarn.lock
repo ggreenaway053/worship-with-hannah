@@ -2819,6 +2819,13 @@ axe-core@=4.7.0:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.7.0.tgz#34ba5a48a8b564f67e103f0aa5768d76e15bbbbf"
   integrity sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==
 
+axios@^0.21.4:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
+
 axios@^1.6.7:
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.7.tgz#7b48c2e27c96f9c68a2f8f31e2ab19f59b06b0a7"
@@ -4769,7 +4776,7 @@ flatted@^3.2.9:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.3.1.tgz#21db470729a6734d4997002f439cb308987f567a"
   integrity sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==
 
-follow-redirects@^1.0.0, follow-redirects@^1.15.4:
+follow-redirects@^1.0.0, follow-redirects@^1.14.0, follow-redirects@^1.15.4:
   version "1.15.5"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.5.tgz#54d4d6d062c0fa7d9d17feb008461550e3ba8020"
   integrity sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==
@@ -4909,12 +4916,12 @@ functions-have-names@^1.2.3:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
-genius-lyrics-api@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/genius-lyrics-api/-/genius-lyrics-api-3.2.1.tgz#33109610311f022728034b5ec4de69a17642917c"
-  integrity sha512-BC36+gaoYGf2agZ6bwKAikN2fom91OBMf6rU35wuy8EN5wsEpLPkY/YcBfaglfRAySnz6BUVUzQ1sd0/Yrr+6w==
+genius-lyrics-api@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/genius-lyrics-api/-/genius-lyrics-api-3.2.0.tgz#305c1e1ebe9a709b04702c42b2bbcaf8556732cc"
+  integrity sha512-6Qfq5vDg04xO1RU/t4bueIfd397dLJV44k672muc1p1ry/rnzUhY65ZAH9fRwhEX642o6y5jv++4/BWM8O4peQ==
   dependencies:
-    axios "^1.6.7"
+    axios "^0.21.4"
     cheerio-without-node-native "0.20.2"
 
 gensync@^1.0.0-beta.2:
