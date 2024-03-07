@@ -1,0 +1,8 @@
+{
+  "short_name": "WWH",
+  "name": "Worship with Hannah",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#B8ACF5",
+  "background_color": "#B8ACF5"
+}

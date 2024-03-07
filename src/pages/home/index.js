@@ -29,7 +29,7 @@ export const Home = () => {
         
       </Container>
 
-      <Container id="favourites" className="pt-5">
+      <Container id="favourites" className="pt-lg-5">
         <Row>
           <Col lg="10" className="content mb-4">
             {favourites.title}            
@@ -37,7 +37,7 @@ export const Home = () => {
 
           {favourites.songs.map((data, i) => {
           return (
-            <Col lg="4">
+            <Col lg="4" className="mb-4">
               <SongCard key={data.song_id} type="favourite" access_token={access_token} title={data.title} song_id={data.song_id}/>
             </Col>
           );

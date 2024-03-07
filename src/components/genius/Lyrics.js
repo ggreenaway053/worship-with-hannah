@@ -6,14 +6,14 @@ function Lyrics(props){
 
   useEffect(() => {
     setLyrics(props.lyrics);
-    document.getElementById("search_results").innerHTML = '';
+    // document.getElementById("search_results").innerHTML = '';
 
   }, [props.lyrics]);
 
   return (
     <div className="song_card">
       {lyricData != null && lyricData != '' && lyricData != undefined ? (
-        <div>
+        <div className="mt-4 mt-lg-0">
           <blockquote>{lyricData}</blockquote>
         </div>
       ) : (
