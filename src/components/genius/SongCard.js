@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
 
 // GET A SPECIFIC SONG :)
 function SongCard(props){

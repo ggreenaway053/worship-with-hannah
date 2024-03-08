@@ -6,6 +6,23 @@ import { main, meta, favourites } from "../../content_option";
 import SongCard from '../../components/genius/SongCard';
 import SearchSongs from '../../components/genius/SearchSongs';
 
+(function() {
+  var cors_api_host = 'cors-anywhere.herokuapp.com';
+  var cors_api_url = 'https://' + cors_api_host + '/';
+  var slice = [].slice;
+  var origin = window.location.protocol + '//' + window.location.host;
+  var open = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function() {
+      var args = slice.call(arguments);
+      var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
+      if (targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
+          targetOrigin[1] !== cors_api_host) {
+          args[1] = cors_api_url + args[1];
+      }
+      return open.apply(this, args);
+  };
+})();
+
 export const Home = () => {
 
   let access_token = 'wR19ZxPZhYROjJrovH-ccNZNR6BeUuwy7Riu8IE_8kTJi18U8vp0xkOuOoBMvRD6';

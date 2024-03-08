@@ -46,7 +46,7 @@ function SongList() {
     setSongs([]);
 
     setSelectedSongId(songId);
-    getLyrics('https://thingproxy.freeboard.io/fetch/'+url).then((lyrics) => setLyrics(lyrics) )
+    getLyrics(url).then((lyrics) => setLyrics(lyrics) )
   };
 
   // on change of input keep updating the search term
