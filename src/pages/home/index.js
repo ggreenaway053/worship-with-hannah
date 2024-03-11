@@ -34,11 +34,14 @@ export const Home = () => {
         <meta name="description" content={meta.description} />
       </Helmet>
 
-      <Container className="banner">
+      <Container key="1" className="banner">
         <Row>
           <Col lg="10" className="content">
             {main.title}
-            {main.content}            
+            {main.content}
+
+            <br />
+            <p class="mb-0">Beause this is a dev project, I use cors-anywhere to grab the lyrics. Thusfore, you'll need to temporarily enable the extension, by going here: <a href="http://cors-anywhere.herokuapp.com/" target="_blank">http://cors-anywhere.herokuapp.com/</a></p>       
           </Col>
         </Row>
 
@@ -46,7 +49,7 @@ export const Home = () => {
         
       </Container>
 
-      <Container id="favourites" className="pt-lg-5">
+      <Container key="2" id="favourites" className="pt-lg-5">
         <Row>
           <Col lg="10" className="content mb-4">
             {favourites.title}            
